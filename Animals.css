@@ -1,0 +1,33 @@
+h1 {
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 50px;
+font-weight: bold;
+}
+
+input {
+margin: 10px;
+font-size: 50px;
+}
+
+button {
+margin: 20px;
+padding: 10px;
+font-size: 20px;
+}
+
+#result {
+font-size: 24px;
+font-weight: bold;
+}
+
+body{
+    background-color: aquamarine;
+    background-image: url(./pexels-zhang-kaiyv-1083515.jpg);
+    
+}
