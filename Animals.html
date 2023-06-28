@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animals Race</title>
+    <title>ANIMAL COMPETITION</title>
     <link rel="stylesheet" href="Animals.css">
 </head>
 <body>
-    <header>
-    <h1>Animals Racing Vote Generator</h1>
-    </header>
-    <main>
-        <section class="Animals-list">
-            <h2>Animal Names</h2>
+   <header>
+     <h1>Voting for the cutest animal competition</h1>
+   </header>
+   <main>
+     <section class="animal-list">
+       <h2>animal names</h2>
+       <ul id="animal-names"></ul>
+     </section>
 
-            <section class="Animal-details">
-                <h2>Animal details</h2>
-            </section>
+     <section class="animal-details">
+       <h2>animal details</h2>
+       <div id="animal-details"></div>
+     </section>
 
-            <div id="Animal-details"></div>
-            <section class="animal-vote">
-                <input type="number" id="vote-input" min="0" value="0">
-                <button id="vote-button">vote</button>
-            </section>
+     <section class="vote-form">
+       <h2>vote for cutest animal</h2>
+       <div id="input-container">
+         <label for="vote-input">votes:</label>
+         <input type="number" value="0" id="vote-form" min="0">
+       </div>
+       <button id="voting-button">vote</button>
+     </section>
 
-            <section class="reset-button">
-                <button id="reset-button">Reset votes</button>
-            </section>
+     <section class="reset-button">
+       <button id="reset-button">reset votes</button>
+     </section>
 
-            <section class="add-animal-form">
-                <h2>Add new animal</h2>
-                <form id="animal-form">
-                    <label for="animal-name">animal name</label>
-                    <input type="text" id="animal-name">
+     <section class="add-animal-form">
+       <h2>adding new animals</h2>
+       <form id="animal-form">
+         <div class="input-container">
+           <label for="animal-names">animal names:</label>
+           <input type="text" id="animal-name">
+         </div>
 
-                    <label for="animal-image">image URL</label>
-                    <input type="text" id="animal-name">
+         <div class="input-container">
+           <label for="animal-image">image URL:</label>
+           <input type="text" id="animal-image">
+         </div>
 
-                    <label for="animal-votes">votes</label>
-                    <input type="text" id="animal-name">
-                    
-                </form>
+         <div class="input-container">
+           <label for="animal-votes">votes:</label>
+           <input type="number" id="animal-votes">
+         </div>
 
-            </section>
-
-
-        </section>
-    </main>
+         <button type="submit">add</button>
+       </form>
+     </section>
+   </main>
+   <script src="Animals.js"></script>
 </body>
 </html>
